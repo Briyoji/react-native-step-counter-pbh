@@ -1,0 +1,13 @@
+diff --git a/node_modules/@dongminyu/react-native-step-counter/android/src/main/java/com/stepcounter/StepCounterModule.kt b/node_modules/@dongminyu/react-native-step-counter/android/src/main/java/com/stepcounter/StepCounterModule.kt
+index 1234567..abcdefg 100644
+--- a/node_modules/@dongminyu/react-native-step-counter/android/src/main/java/com/stepcounter/StepCounterModule.kt
++++ b/node_modules/@dongminyu/react-native-step-counter/android/src/main/java/com/stepcounter/StepCounterModule.kt
+@@ -35,7 +35,7 @@ class StepCounterModule(reactContext: ReactApplicationContext) :
+     }
+ 
+     private val appContext: ReactApplicationContext = context
+-    private val lateinit sensorManager: SensorManager
++    private lateinit var sensorManager: SensorManager
+     private val stepsOK: Boolean
+         get() = checkSelfPermission(appContext, STEP_COUNTER) == PERMISSION_GRANTED
+     private val accelOK: Boolean
